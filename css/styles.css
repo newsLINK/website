@@ -1,0 +1,8 @@
+body {
+    font-family: "Raleway";
+}
+
+.topNav {
+    height: 65px;
+    background-color:rgba(0,0,0,0.3);
+}
