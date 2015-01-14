@@ -49,3 +49,8 @@ footer p {
     display: block;
     font-size: .85em;
 }
+
+.left {
+    padding-right: 1.5em;
+    border-right: 1px solid #ccc;
+}
