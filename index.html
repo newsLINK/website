@@ -20,12 +20,33 @@
   </head>
   
     <body>
-                  <header>
-              <h1>The newsLINK Group, Inc.</h1>
-          </header>
-      <div class="top col-md-12">
+    <!-------------------- SIDE MENU -------------------------->    
+        <div class="sideMenu">
+            <ul>
+                <li>Home</li>
+                <li>Associations</li>
+                <li>Non-Profits</li>
+                <li>Professional Services</li>
+                <li>Websites</li>
+                <li>Content Library</li>
+                <li>Email Marketing</li>
+                <li>City Magazines</li>
+            </ul>
+        </div>
+        
+        
+    <!-------------------- HEADER -------------------------->    
+      
+        <header>
+            <h1>The newsLINK Group, Inc.</h1>
+            <a href="#" class="toggle-panel"><div class="entypo menu">&#9776;</div></a>
+        </header>
+        
+          <div class="top col-md-12"></div>
+        
+        
 
-      </div>
+    <!-------------------- MAIN CONTENT -------------------------->    
       
       <main>
       
@@ -71,8 +92,11 @@
           
           
           </div>
+
           
-          <div class="col-md-3 right">
+    <!-------------------- SIDEBAR -------------------------->    
+          
+          <div class="col-md-3 sidebar">
               
               <h2>Sidebar</h2>
               <h4>Subhead 4</h4>
@@ -88,6 +112,9 @@
           </div>
       
       </main>
+
+        
+    <!-------------------- FOOTER -------------------------->    
         
         <footer class="col-md-12">
             <p>
@@ -102,5 +129,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+        <script src="js/scotchPanels.js"></script>
+        
+        <script>
+            $('.sideMenu').scotchPanel({
+                containerSelector: 'body', // As a jQuery Selector
+                direction: 'left', // Make it toggle in from the left
+                duration: 300, // Speed in ms how fast you want it to be
+                transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+                clickSelector: '.toggle-panel', // Enables toggling when clicking elements of this class
+                distanceX: '30%', // Size fo the toggle
+                enableEscapeKey: true // Clicking Esc will close the panel
+            });
+        
+        </script>
+            
+            
+            
+            
+            
+            
+        
   </body>
 </html>

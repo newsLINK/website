@@ -1,6 +1,15 @@
+@font-face {
+    font-family: Entypo;
+    src: url(../fonts/entypo.woff);
+}
+
 body {
     font-family: "Raleway";
     font-size: 16px;
+}
+
+.entypo {
+    font-family: Entypo;
 }
 
 div.top {
@@ -15,7 +24,7 @@ header {
     height: 75px;
     background-color:rgba(0,0,0,0.3); 
     color: #fff;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 100%;
 }
@@ -24,6 +33,39 @@ header h1 {
     font-size: 2em;
     margin: 0;
     padding: .5em;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 75px;
+    width: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 5em;
+    line-height: 0.5em;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.menu a:link, .menu a:visited {
+    color: #fff;
+}
+
+.sideMenu {
+    background: #666;
+    padding-top: 2em;
+}
+
+.sideMenu ul {
+    padding-left: 1em;
+}
+
+.sideMenu ul li {
+    list-style: none;
+    color: #fff;
+    padding: .5em;
+    
 }
 
 .topNav {
@@ -53,4 +95,20 @@ footer p {
 .left {
     padding-right: 1.5em;
     border-right: 1px solid #ccc;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 992px) {
+
+    div.sidebar {
+        display: none;
+    }
+    
+}
+
+
+header {
+    
 }
