@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,26 +21,29 @@
   </head>
   
     <body>
-    <!-------------------- SIDE MENU -------------------------->    
-        <div class="sideMenu">
+   <!-------------------- SIDE MENU -------------------------->    
+        <nav class="sideMenu navmenu navmenu-fixed-left navmenu-site offcanvas" role="navigation">
             <ul>
-                <li>Home</li>
-                <li>Associations</li>
-                <li>Non-Profits</li>
-                <li>Professional Services</li>
-                <li>Websites</li>
-                <li>Content Library</li>
-                <li>Email Marketing</li>
-                <li>City Magazines</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Associations</a></li>
+                <li><a href="">Non-Profits</a></li>
+                <li><a href="">Professional Services</a></li>
+                <li><a href="">Websites</a></li>
+                <li><a href="">Content Library</a></li>
+                <li><a href="">Email Marketing</a></li>
+                <li><a href="">City Magazines</a></li>
             </ul>
-        </div>
+            <ul id="login">
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
         
         
     <!-------------------- HEADER -------------------------->    
       
         <header>
             <h1>The newsLINK Group, Inc.</h1>
-            <a href="#" class="toggle-panel"><div class="entypo menu">&#9776;</div></a>
+             <a href="#" class="menuToggle" data-toggle="offcanvas" data-target=".sideMenu" data-canvas="body"><div class="entypo menu">&#9776;</div></a>
         </header>
         
           <div class="top col-md-12"></div>
@@ -130,25 +134,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
         <script src="js/scotchPanels.js"></script>
-        
-        <script>
-            $('.sideMenu').scotchPanel({
-                containerSelector: 'body', // As a jQuery Selector
-                direction: 'left', // Make it toggle in from the left
-                duration: 300, // Speed in ms how fast you want it to be
-                transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
-                clickSelector: '.toggle-panel', // Enables toggling when clicking elements of this class
-                distanceX: '30%', // Size fo the toggle
-                enableEscapeKey: true // Clicking Esc will close the panel
-            });
-        
-        </script>
-            
-            
-            
-            
-            
-            
+        <script src="js/jasny-bootstrap.min.js"></script>
+
         
   </body>
 </html>
